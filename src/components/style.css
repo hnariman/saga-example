@@ -1,0 +1,55 @@
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 8fr 1fr;
+  min-width: 250px;
+}
+
+section {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: max-content 1fr;
+}
+
+@media all and (max-width: 450px) {
+  section {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
+aside {
+  border: 1px solid red;
+  padding: 1em;
+}
+dd {
+  margin: 1em 0;
+}
+
+.context {
+  text-align: center;
+  border: 1px solid red;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-shadow: 0 0 12px 0 #00000050;
+  background: #8b8b8b;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.highlight {
+  font-size: 1.6em;
+  color: #900000;
+}
